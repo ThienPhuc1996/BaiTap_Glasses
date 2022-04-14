@@ -16,7 +16,7 @@ export default class BaiTapThuKinh extends Component {
    
     renderGlassessList = () => {
        return dataGlasses.map((glassesItem,index) => {
-         return <img onClick={() => {this.changeGlasses()}} className="ml-2 p-2 border border-width-1" style={{width:'110px', cursor:'pointer'}} key={index} 
+         return <img onClick={() => {this.changeGlasses(glassesItem)}} className="ml-2 p-2 border border-width-1" style={{width:'110px', cursor:'pointer'}} key={index} 
          src={glassesItem.url}/>
        })
    }
